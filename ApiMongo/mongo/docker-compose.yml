@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    ports:
+      - 8081:8081  
+    volumes:
+      - /home/johnatan/Documents/go/ApiMongo/mongo/data:/data/db
