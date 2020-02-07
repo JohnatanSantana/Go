@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	. "github.com/johnatansantana/go/Api_NBA/config/dao"
-	. "github.com/johnatansantana/go/Api_NBA/models"
+	. "github.com/johnatansantana/Go/Api_NBA/config/dao"
+	. "github.com/johnatansantana/Go/Api_NBA/models"
 	"gopkg.in/mgo.v2/bson"
 )
 

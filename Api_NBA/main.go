@@ -6,9 +6,9 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	. "github.com/johnatansantana/go/Api_NBA/config"
-	. "github.com/johnatansantana/go/Api_NBA/config/dao"
-	nbarouter "github.com/johnatansantana/go/Api_NBA/router"
+	. "github.com/johnatansantana/Go/Api_NBA/config"
+	. "github.com/johnatansantana/Go/Api_NBA/config/dao"
+	nbarouter "github.com/johnatansantana/Go/Api_NBA/router"
 )
 
 var dao = NbaDAO{}

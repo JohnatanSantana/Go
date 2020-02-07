@@ -3,7 +3,7 @@ package dao
 import (
 	"log"
 
-	. "github.com/johnatansantana/go/Api_NBA/models"
+	. "github.com/johnatansantana/Go/Api_NBA/models"
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
