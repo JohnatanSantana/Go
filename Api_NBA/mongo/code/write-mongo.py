@@ -12,12 +12,13 @@ from pyhive import presto
 # MONGO DB
 username = 'root'
 password = 'root'
-server = '3.82.6.150'
+# server = '3.82.6.150'
+server = 'localhost'
 client = MongoClient('mongodb://{}:27017/'.format(server))
 
 banco = client['john']
 collection = banco['nba']
-collection = banco.album
+# collection = banco.album
 
 # ELASTIC
 es = Elasticsearch(hosts= server)
@@ -71,7 +72,7 @@ def write_elastic(data):
 path = '/home/johnatan/Documents/go/Go/ApiMongo/mongo/files/NBAAllStars2000-2016.csv'
 df = read_csv(path)
 
-read_presto()
+# read_presto()
 # write_elastic(df)
 # write_mongo(df)
-# read_mongo()
+read_mongo()

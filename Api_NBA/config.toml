@@ -1,2 +1,4 @@
 server="localhost"
-database="nba_db"
+database="john"
+user="admin"
+password="admin"
