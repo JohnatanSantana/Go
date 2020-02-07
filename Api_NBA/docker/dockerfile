@@ -5,10 +5,9 @@ WORKDIR /go/src/github.com/johnatansantana/
 
 
 RUN cd /go/src/github.com/johnatansantana/ \
-    &&  git clone https://github.com/JohnatanSantana/Go.git \
-    && go get -d ./Go/Api_NBA/  \
-    && echo "passou" \
+    &&  git clone https://github.com/JohnatanSantana/Go.git 
+RUN  go get -d ./Go/Api_NBA/  
     # && go install -v ./ \
-    && go run Go/Api_NBA/main.go
+RUN  go run Go/Api_NBA/main.go
 
 EXPOSE 3000
