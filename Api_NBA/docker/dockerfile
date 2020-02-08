@@ -8,6 +8,8 @@ RUN cd /go/src/github.com/johnatansantana/ \
     &&  git clone https://github.com/JohnatanSantana/Go.git 
 RUN  go get -d ./Go/Api_NBA/  
     # && go install -v ./ \
-RUN  go run Go/Api_NBA/main.go
+# RUN cd ./Go/Api_NBA/ 
+    # && go run /go/src/github.com/johnatansantana/Go/Api_NBA/main.go
+WORKDIR /go/src/github.com/johnatansantana/Go/Api_NBA/
 
 EXPOSE 3000
